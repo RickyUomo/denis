@@ -1,56 +1,104 @@
 body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    margin: auto;
-    width: 500px;
+    background-color: #F2D1C9;
 }
 
-.main-contents {
-    margin: auto;
-    width: 500px;
-}
+/* Navigation */
 
-img,
-video {
+.navigation-bar {
+    height: 70px;
     width: 100%;
 }
 
-video {
-    height: 241px;
+.navigation-bar ul {
+    margin-top: 10px;
+    margin-left: 130px;
+    font-weight: 900;
+    padding: 0px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.navigation-bar li {
+    list-style-type: none;
+    padding: 0px;
+    height: 24px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    display: inline;
+}
+
+.navigation-bar li a {
+    color: black;
+    font-size: 16px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    line-height: 70px;
+    padding: 5px 15px;
+    opacity: 0.7;
+    font-size: 22px;
+}
+
+#navigation-container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+
+.logo {
+    height: 80px;
+}
+
+/* Content */
+
+.container {
+    display: flex;
+    margin-top: 60px;
+}
+
+.sidebar,
+.content {
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content {
+    padding-left: 200px;
+    min-width: 630px;
 }
 
 .description {
-    display: flex;
-    justify-content: space-between;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: #646464;
 }
 
-.left-des {
-    margin-right: 20px;
+.description p {
+    font-family: 'Helvetica Neue Bold';
 }
 
-.grid-container {
-    display: grid;
-    grid-template-areas:
-        'top top'
-        'bottom-left bottom-right';
-    gap: 5px;
+.p-bold {
+    font-weight: 700;
 }
 
-.item1 {
-    grid-area: top;
+.sidebar {
+    min-width: 300px;
+    padding-right: 200px;
 }
 
-.item2 {
-    grid-area: bottom-left;
+.image1,
+.image2 {
+    border-radius: 25px;
+    width: 300px;
+    height: 300px;
 }
 
-.item3 {
-    grid-area: bottom-right;
-}
-
-footer {
-    font-size: 8px;
-    text-align: center;
-    color: gray;
+.image2 {
+    margin-top: 10px;
 }

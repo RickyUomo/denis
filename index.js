@@ -1,5 +1,5 @@
 
-function timeOut(){
+function timeOut() {
 
 }
 
